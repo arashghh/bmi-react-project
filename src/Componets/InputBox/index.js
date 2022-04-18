@@ -11,7 +11,7 @@ export default function InputBox({ setResultText }) {
     console.log(height);
     console.log(weight);
     const result = weight / (height * height);
-    const bmi = result * 10000;
+    const bmi = (result * 10000).toFixed(2);
 
     var resultText = "";
 
@@ -26,7 +26,7 @@ export default function InputBox({ setResultText }) {
     }
 
     console.log(resultText);
-    setResultText(resultText);
+    setResultText(resultText, bmi);
   };
 
   const onChangeInputs = (e) => {

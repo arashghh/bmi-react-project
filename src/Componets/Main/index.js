@@ -5,15 +5,17 @@ import ResultBox from "../ResultBox/indedx";
 
 export default function Main() {
   const [result, setResult] = useState("");
+  const [bmi, setBmi] = useState();
 
-  const handleSetResult = (resultText) => {
+  const handleSetResult = (resultText, bmi) => {
     setResult(resultText);
+    setBmi(bmi);
   };
 
   return (
     <div className='main'>
       <InputBox setResultText={handleSetResult} />
-      <ResultBox resultText={result} />
+      <ResultBox resultText={result} bmi={bmi} name={"arash"} />
     </div>
   );
 }
