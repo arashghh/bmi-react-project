@@ -1,0 +1,46 @@
+.input-box {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.inputs {
+  margin: 50px;
+}
+
+label {
+  color: #2b2d42;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.input-design {
+  background-color: #edf2f4;
+  color: #2b2d42;
+  font-weight: bold;
+  width: 120px;
+  padding: 10px 15px 10px 25px;
+  font-size: 18px;
+  border-radius: 20px;
+  &:hover {
+    background-color: #ef233c;
+    color: #edf2f4;
+  }
+}
+
+.submit {
+  padding: 10px 15px;
+  margin-left: 50px;
+  font-size: 18px;
+  color: #2b2d42;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  &:hover {
+    background-color: #ef233c;
+    color: #edf2f4;
+    cursor: pointer;
+  }
+}
